@@ -7,6 +7,8 @@ presented.
 
 Use `@allow_only_apikey()` with a list of key names as the first parameter :
 
+	from rest_framework_api_key_allowbynames.decorator import allow_only_apikey
+	
     class TelegramMemberCheck(APIView):
         permission_classes = [HasAPIKey]
     
@@ -15,3 +17,4 @@ Use `@allow_only_apikey()` with a list of key names as the first parameter :
             pass
 
 If the key does not match, an `AuthenticationFailed` is returned.
+
