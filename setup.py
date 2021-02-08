@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="djangorestframework-api-key-allowbynames", 
-    version="1.0.0",
+    version="1.0.1",
     author="mneitsabes",
     author_email="mneitsabes@nulloz.be",
     description="A djangorestframework-api-key decorator to allow access by key names",
@@ -13,7 +13,9 @@ setuptools.setup(
     long_description_content_type="text/markdown",
 	keywords = ['django', 'djangorestframework-api-key'],
     url="https://github.com/mneitsabes/djangorestframework-api-key-allowbynames",
-    packages=setuptools.find_packages(),
+	packages=setuptools.find_packages("src"),
+    package_dir={"": "src"},
+    include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
