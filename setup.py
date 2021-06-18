@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="djangorestframework-api-key-allowbynames", 
-    version="1.0.1",
+    version="1.0.2",
     author="mneitsabes",
     author_email="mneitsabes@nulloz.be",
     description="A djangorestframework-api-key decorator to allow access by key names",

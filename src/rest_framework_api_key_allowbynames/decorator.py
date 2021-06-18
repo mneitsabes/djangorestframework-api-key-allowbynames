@@ -27,6 +27,9 @@ def allow_only_apikey(key_names):
                     if api_key.name == k:
                         success = True
                         break
+
+                if success:
+                    request.META["API_KEY_NAME"] = api_key.name
             except ValueError:
                 pass
 
